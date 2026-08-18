@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- Define o tipo do documento como HTML5 -->
+<html lang="en">
+<!-- Início da página, com o idioma definido como inglês -->
+
+<head>
+    <!-- A tag <head> contém informações sobre a página, não aparece visualmente -->
+
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres (permite acentos e letras especiais) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar ao tamanho da tela do celular -->
+
+    <title>Rafael Machado</title>
+    <!-- Define o título da aba do navegador -->
+
+    <style>
+        /* Tudo aqui dentro é CSS — estilo visual da página */
+
+        body {
+            background-image: url(https://th.bing.com/th/id/R.9beef949b579bd7ee82a8a3e374c29b8?rik=9B91ltqGVcONdg&riu=http%3a%2f%2feskipaper.com%2fimages%2fsoccer-field-1.jpg&ehk=FVfL7KImPPJ99k%2bXOkcr%2b0JfKHzGC0j5aI3hml4Lr0A%3d&risl=&pid=ImgRaw&r=0);
+            /* Estilo geral da página inteira */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* Define a fonte do texto (tenta usar as fontes na ordem, usa a última se não encontrar) */
+            background-color: #000000;
+            /* Cor de fundo da página (roxo clarinho) */
+            margin: 20px;
+            /* Espaço entre o conteúdo e a borda da janela */
+        }
+
+        header h1{
+
+            margin-left: 20px;
+        }
+
+
+        /* Estilo do cabeçalho do site */
+        header{
+            background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWF4bXBxb3FrdnE5dmd0ZTFxY3NkbmhlbHpxZ2R2NGx4Mmx6N2l4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IgA2AJscUx3gTfITIY/giphy.gif);
+            background-color: #ffffff;
+            /* Fundo azul escuro/roxo */
+            color: rgb(255, 255, 255);
+            /* Cor do texto: branco */
+            padding: 20px;
+            /* Espaço interno entre o texto e as bordas do cabeçalho */
+            text-align: center;
+            /* Centraliza o texto */
+        }
+
+
+        /* Estilo dos links dentro da barra de navegação */
+        nav a {
+            
+            color: #000000;
+            /* Cor dos links: branco */
+            margin: 0 30px;
+            /* Espaço de 30px entre cada link (horizontal) */
+            text-decoration: none;
+            /* Remove o sublinhado padrão dos links */
+            font-size: 20px;
+            /* Tamanho da fonte dos links */ 
+        
+        }
+
+        /* Estilo que aparece quando o mouse passa sobre o link */
+        nav a:hover {
+            
+            text-decoration: underline;
+            /* Adiciona sublinhado ao passar o mouse */
+            color: rgb(0, 0, 0);
+            /* Muda a cor para azul ciano */
+        }
+
+
+        /* Estilo do container que envolve todos os cards */
+        .fundo{
+            display: flex;
+            /* Usa flexbox para organizar os cards lado a lado */
+            gap: 10px;
+            /* Espaço de 10px entre os cards */
+            width: 100%;
+            /* Ocupa 100% da largura disponível */
+            height: 100%;
+            /* Ocupa 100% da altura disponível */
+            flex-wrap: wrap;
+            /* Permite que os cards quebrem para a linha de baixo quando não couberem */
+            justify-content: space-around;
+            /* Distribui os cards com espaço igual ao redor */
+            margin-top: 10px;
+            /* Espaço de 10px acima do container */
+        }
+
+
+        /* Estilo de cada card individualmente */
+        .card {   
+            width: 300px; /* Largura fixa de 300px */
+            height: 350px; /* Altura fixa de 350px */
+            align-items: center; /* Centraliza o conteúdo verticalmente */
+            text-align: center; /* Centraliza o texto */
+            background-color: rgb(253, 253, 255); /* Cor de fundo dos cards (roxo médio) */
+            border-radius: 15px; /* Cantos arredondados */
+            padding: 10px; 
+            
+        }
+
+        .card img {
+            /* Estilo da imagem dentro de cada card */
+            width: 100%;
+            /* Imagem ocupa toda a largura do card */
+            height: 80%;
+            /* Imagem ocupa 80% da altura do card */
+            object-fit: cover;
+            /* Recorta a imagem para preencher o espaço sem distorcer */
+            border-radius: 15px;
+            /* Cantos arredondados na imagem */
+        }
+
+        .card:hover {
+            /* Efeito visual quando o mouse passa sobre o card */
+            transform: translateY(-10px) scale(1.00);
+            /* Move o card 10px para cima e aumenta levemente o tamanho */
+            border-color: #e8e2da;
+            /* Muda a cor da borda para laranja */
+            box-shadow: 0 15px 20px #8b4141;
+            /* Adiciona uma sombra escura embaixo do card */
+            background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExazl2bHJndzR4cnpreWVyeWQ4MzJnYWt4M2IzdGo4NTRobXlha25taiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mRVMYPfmMAca4/giphy.gif);
+        }
+
+        .subtitulo {
+            /* Estilo da div do subtítulo abaixo do cabeçalho */
+            text-align: center;
+            /* Centraliza o texto */
+            color: #ffffff;
+            /* Cor do texto: branco */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A tag <body> contém tudo que aparece visualmente na página -->
+
+    <header>
+        <!-- Cabeçalho do site -->
+
+        <h1><strong>Melhores jogadores do Mundo</strong></h1>
+        <!-- Título principal da página em negrito -->
+
+        <hr>
+        <!-- Linha horizontal separadora -->
+
+        <nav>
+            <!-- Barra de navegação com links do site -->
+            <a href="link Aqui">loja</a>
+            <!-- Link para a página da loja (substituir "link Aqui" pelo endereço real) -->
+            <a href="Link Aqui">sobre</a>
+            <!-- Link para a página "sobre" -->
+            <a href="Link Aqui">fotos</a>
+            <!-- Link para a página de fotos -->
+        </nav>
+               
+        <hr>
+        <!-- Segunda linha horizontal separadora -->
+    </header>
+
+    <div class="subtitulo">
+        <!-- Div com o subtítulo abaixo do cabeçalho -->
+        <h2>Melhor jogadores</h2>
+        <!-- Subtítulo da página -->
+        <hr>   
+        <!-- Linha separadora -->
+    </div>
+
+    <!-- Container principal que envolve todos os cards -->
+    <div class="fundo">
+    
+
+        
+        
+
+        <!-- Card 1 - Sieun -->
+        <div class="card">
+            <img src="https://wallpapers.com/images/hd/neymar-jr-brazil-jersey-7mzouwu1dymq60f3.jpg" alt="" width="380px">
+        <!-- Imagem do personagem (src = endereço da imagem, alt = descrição para acessibilidade) -->
+            <h2>Neymar JR</h2>
+            <!-- Nome do personagem -->
+        </div>
+
+        <!-- Card 2 - Suho -->
+        <div class="card">
+            <img src="https://www.mixvale.com.br/wp-content/uploads/2025/09/Kylian-Mbappe.webp" alt="" width="380">
+            <h2> Kylian Mbappé</h2>
+        </div>
+
+        <!-- Card 3 - Baku -->
+        <div class="card">
+            <img src="https://i.metroimg.com/Gj2gUo8ZujfT9ycxdbxqBUGSEJ8NHmPhvcFEhU91QUw/rs:fill:1200:800:1/g:no/q:85/f:webp/plain/https://images.metroimg.com/2026/06/messi-gol-argentina-austria.jpg" alt="" width="380px">
+            <h2>Messi</h2>
+        </div>
+
+        <!-- Card 4 - Baku (repetido) -->
+        <div class="card">
+            <img src="https://s2-pegn.glbimg.com/gooxhHDB7mqqY7JZyG0WZDRA6-0=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_ba41d7b1ff5f48b28d3c5f84f30a06af/internal_photos/bs/2026/F/f/LWADcBS5W3SCTFY4tlfA/gettyimages-2285118666.jpg" alt="" width="380px">
+            <h2> Erling Haaland</h2>
+        </div>
+
+        <!-- Card 5 - Baku (repetido) -->
+         <div class="card">
+            <img src="https://lentedesportiva.com/wp-content/uploads/2025/01/shutterstock_1102893335.jpg" alt="" width="380px">
+            <h2>Virgil van Dijk</h2>
+        </div>
+
+        <!-- Card 6 - Baku (repetido) -->
+    <div class="card">
+            <img src="https://wallpapercave.com/wp/wp13741929.jpg" alt="" width="380px">
+            <h2>Vini Junior</h2>
+        </div>
+
+        <!-- Card 7 - Baku (repetido) -->
+    <div class="card">
+            <img src="https://f.i.uol.com.br/fotografia/2018/07/08/15310733995b425377766e4_1531073399_3x2_xl.jpg" alt="" width="380px">
+            <h2>Harry Kane</h2>
+        </div>
+
+        <!-- Card 8 - Sieun (repetido) -->
+    <div class="card">
+            <img src="https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/gettyimages-2278224961-qe1kpkjp3z21-768x432.jpg" alt="" width="380px">
+            <h2>Gabriel Magalhães</h2>
+        </div>
+
+        <!-- Card 9 - Sieun (repetido) -->
+    <div class="card">
+            <img src="https://i.pinimg.com/originals/aa/de/2c/aade2cf2986686d8b87b729f3d98fb36.png" alt="" width="380px">
+            <h2>Marquinhos</h2>
+        </div>
+
+        <!-- Card 10 - Sieun (repetido) -->
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.hDaWH6r1k60YAiDsODdCMAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" width="380px">
+            <h2>Luka Modrić</h2>
+        </div>
+
+        <!-- Card 11 - Sieun (repetido) -->
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/77/04/3e/77043e3579d777856a72816abab8d752.jpg" alt="" width="380px">
+            <h2>CR7</h2>
+        </div>
+
+        <!-- Card 12 - Sieun (repetido) -->
+        <div class="card">
+            <img src="https://assets.goal.com/images/v3/blt4cccb6e5c4c62673/GettyImages-1610362030.jpg?auto=webp&format=pjpg&width=3840&quality=60" alt="">
+            <h2>Jude Bellingham</h2>
+        </div>
+
+
+
+
+
+
+
+
+        
+    </div>
+    <!-- Fim do container de cards -->
+
+</body>
+<!-- Fim do conteúdo visível da página -->
+
+</html>
+<!-- Fim do documento HTML -->
